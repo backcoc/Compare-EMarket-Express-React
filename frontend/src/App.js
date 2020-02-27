@@ -6,18 +6,18 @@ import Footer from "./layouts/footer/Footer";
 
 //Component
 import HomePage from "./component/home/index";
-import HomePage2 from "./component/home2";
-import HomePage3 from "./component/home3";
+// import HomePage2 from "./component/home2";
+// import HomePage3 from "./component/home3";
 
 import "./App.css";
 import "./Vendor.js";
 
 import { IntlProvider } from "react-intl";
 import ShopPage from "./component/shop";
-import ShopPage1 from "./component/shop/index1";
-import ShopPage2 from "./component/shop/index2";
-import ShopPage3 from "./component/shop/index3";
-import ShopPage4 from "./component/shop/index4";
+// import ShopPage1 from "./component/shop/index1";
+// import ShopPage2 from "./component/shop/index2";
+// import ShopPage3 from "./component/shop/index3";
+// import ShopPage4 from "./component/shop/index4";
 import ProductDetail from "./component/shop/product-detail";
 import ShopingCart from "./component/shop/ShopingCart";
 import MyAccount from "./component/Account/MyAccount";
@@ -30,8 +30,8 @@ import WishList from "./component/WishList/WishList";
 import Aboutus from "./component/AboutUs/Aboutus";
 import Contactus from "./component/ContactUs/Contactus";
 import Maintenance from "./component/Pages/Maintenance";
-import BlogFullWidth from "./component/Blog/BlogFullWidth";
-import HomePage4 from "./component/home4";
+// import BlogFullWidth from "./component/Blog/BlogFullWidth";
+// import HomePage4 from "./component/home4";
 import CheckOut from "./component/shop/CheckOut";
 
 import Address from "./component/Account/Address";
@@ -87,15 +87,15 @@ class App extends React.Component {
                 <Route exact path="/" component={HomePage} />
                 <Route exact path = "/compare" component={CompareShop}/>
                 <Route exact path="/new" component={New} />
-                <Route exact path="/index-new-fashion" component={HomePage2} />
+                {/* <Route exact path="/index-new-fashion" component={HomePage2} />
                 <Route exact path="/index-modern" component={HomePage3} />
                 <Route exact path="/index-home-classic" component={HomePage4} />
-                <Route exact path="/newCom" component={HomePage4} />
+                <Route exact path="/newCom" component={HomePage4} /> */}
                 <Route exact path="/shop" component={ShopPage} />
-                <Route exact path="/shop1" component={ShopPage1} />
+                {/* <Route exact path="/shop1" component={ShopPage1} />
                 <Route exact path="/shop2" component={ShopPage2} />
                 <Route exact path="/shop3" component={ShopPage3} />
-                <Route exact path="/shop4" component={ShopPage4} />
+                <Route exact path="/shop4" component={ShopPage4} /> */}
                 <Route exact path="/ShopingCart" component={ShopingCart} />
                 <Route exact path="/MyAccount" component={MyAccount} />
                 <Route
@@ -103,7 +103,7 @@ class App extends React.Component {
                   path="/BlogSinglePage"
                   component={BlogSinglePage}
                 />
-                <Route exact path="/BlogFullWidth" component={BlogFullWidth} />
+                {/* <Route exact path="/BlogFullWidth" component={BlogFullWidth} /> */}
                 <Route exact path="/wishlist" component={WishList} />
                 <Route exact path="/Aboutus" component={Aboutus} />
                 <Route exact path="/contactus" component={Contactus} />
