@@ -17,7 +17,6 @@ import TopFilter from '../../widgets/shopfilter/TopFilter';
 import { Button } from 'antd';
 
 class ShopPage extends Component {
-  
 
     constructor(props, context) {
         super(props, context)
@@ -27,10 +26,7 @@ class ShopPage extends Component {
           getproduct:AllProduct
         }
     }
-
-
     componentWillMount(){
-
         if (this.state.limit < this.state.getproduct.length) {
             setTimeout(() => {
                 this.setState({
@@ -48,7 +44,9 @@ class ShopPage extends Component {
         window.location.reload(false);
     }
     render() {
-
+    const styles={
+            display:'flex'
+     }
     let {products} = this.props;
     let layoutstyle=localStorage.getItem('setLayoutStyle')
 
@@ -103,7 +101,13 @@ class ShopPage extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                <div style ={styles}>
+                                <div className ="col-4" > <h1>Break Out</h1></div>
+                                <div className ="col-4"> <h1>Engine</h1></div>
+                                <div className ="col-4"> <h1>Outiftters</h1></div>
+                                </div>
 
+                                
                                 {products.length > 0 ?
                                     <div>
                                         <Row className="products products-loop grid ciyashop-products-shortcode pgs-product-list">
@@ -136,8 +140,7 @@ class ShopPage extends Component {
     }
 }
 const mapDispatchToProps  = (state) => ({
-    products : AllProduct
-    // products: getFilterProductsdata(state.data, state.filters)
+    products: AllProduct.slice(0,3) // getFilterProductsdata(state.data, state.filters)
 })
 export default connect(
     mapDispatchToProps , {}

@@ -23,6 +23,7 @@ import ShopingCart from "./component/shop/ShopingCart";
 import MyAccount from "./component/Account/MyAccount";
 import PageNotFound from "./component/Pages/PageNotFound";
 import ComingSoon from "./component/Pages/ComingSoon";
+import CompareShop from "./component/shop/compare";
 
 import BlogSinglePage from "./component/Blog/BlogSinglePage";
 import WishList from "./component/WishList/WishList";
@@ -84,6 +85,7 @@ class App extends React.Component {
               <Headers />
               <Switch>
                 <Route exact path="/" component={HomePage} />
+                <Route exact path = "/compare" component={CompareShop}/>
                 <Route exact path="/new" component={New} />
                 <Route exact path="/index-new-fashion" component={HomePage2} />
                 <Route exact path="/index-modern" component={HomePage3} />
