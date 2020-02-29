@@ -15,6 +15,7 @@ import {getFilterProductsdata} from '../../services';
 import { connect } from 'react-redux';
 import TopFilter from '../../widgets/shopfilter/TopFilter';
 import { Button } from 'antd';
+import Comparefilter from '../../widgets/shopfilter/filterbanner';
 
 class ShopPage extends Component {
 
@@ -91,7 +92,8 @@ class ShopPage extends Component {
                             <div className="content col-xl-9 col-lg-8">
                                 <div className="products-header">
                                     <div className="right-banner">
-                                        <img alt="Shop Banner" src={require(`../../assets/images/shop/shop-banner.jpg`)}  className="img-fluid" />
+                                        <Comparefilter/>
+                                        {/* <img alt="Shop Banner" src={require(`../../assets/images/shop/shop-banner.jpg`)}  className="img-fluid" /> */}
                                     </div>
                                     <div className="loop-header">
                                         <div className="loop-header-tools">

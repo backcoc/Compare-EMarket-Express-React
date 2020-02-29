@@ -25,7 +25,7 @@ import PageNotFound from "./component/Pages/PageNotFound";
 import ComingSoon from "./component/Pages/ComingSoon";
 import CompareShop from "./component/shop/compare";
 
-import BlogSinglePage from "./component/Blog/BlogSinglePage";
+// import BlogSinglePage from "./component/Blog/BlogSinglePage";
 import WishList from "./component/WishList/WishList";
 import Aboutus from "./component/AboutUs/Aboutus";
 import Contactus from "./component/ContactUs/Contactus";
@@ -98,11 +98,11 @@ class App extends React.Component {
                 <Route exact path="/shop4" component={ShopPage4} /> */}
                 <Route exact path="/ShopingCart" component={ShopingCart} />
                 <Route exact path="/MyAccount" component={MyAccount} />
-                <Route
+                {/* <Route
                   exact
                   path="/BlogSinglePage"
                   component={BlogSinglePage}
-                />
+                /> */}
                 {/* <Route exact path="/BlogFullWidth" component={BlogFullWidth} /> */}
                 <Route exact path="/wishlist" component={WishList} />
                 <Route exact path="/Aboutus" component={Aboutus} />
